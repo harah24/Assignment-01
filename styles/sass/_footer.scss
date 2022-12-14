@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $secondary-color;
+    color:$primary-color;
+
+}
+

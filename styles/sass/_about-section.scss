@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+h2 {
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: 5.1rem;
+    text-transform: uppercase;
+}
+
+.suzies-story {
+    background-color: #152d20;
+    color: $primary-color;
+    padding: 100px 0;
+}
+
+.suzies-story .wrapper{
+    display: flex;
+}
+
+.image-container{
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 30%;
+}
+
+.text-container{
+    width: 70%;
+}
+
+button{
+    padding: 15px 30px;
+    border: $secondary-color;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 29px;
+    display: inline-block;
+}

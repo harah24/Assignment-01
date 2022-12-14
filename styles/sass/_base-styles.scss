@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $base-font;
+    font-size: 2rem;
+    color: $secondary-color;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $primary-color;
+    display: flex;
+}

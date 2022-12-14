@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+
+.section-4 {
+    background-color:$tertiary-color;
+    font-family: $secondary-font;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 100px 0;
+}
+
+.flex-section4{
+    display: flex;
+}
+
+.animal-spotlight {
+    flex-direction: column;
+    
+    li{
+        width: 30%;
+        align-self: center;
+    }
+}
+
+.events {
+    flex-direction: column;
+    padding-right: 250px;
+    padding-left: 200px;
+}
+
+.merch {
+    flex-direction: column;
+}
+
+i{
+    margin-bottom: 45px;
+    align-self: center;
+}
+

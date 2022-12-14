@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+
+.blog{
+display: flex;
+flex-direction: column;
+
+    p {
+        color: $secondary-color;
+    }
+}
+
+.box{
+    width: 50%;
+}
+
+h4{
+        font-family: $heading-font;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        color: $tertiary-color;
+}
+
+.box-1,
+.box-2{
+display: flex;
+}
+
+.box-3,
+.box-6{
+    margin: auto 0;
+}
