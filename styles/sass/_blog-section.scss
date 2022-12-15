@@ -4,9 +4,13 @@
 .blog{
 display: flex;
 flex-direction: column;
-
+background-color:$quaternary-color;
     p {
         color: $secondary-color;
+    }
+    button{
+        background-color: $tertiary-color;
+        color: $primary-color;
     }
 }
 

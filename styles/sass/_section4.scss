@@ -11,16 +11,16 @@
 
 .flex-section4{
     display: flex;
-    ul {
-        margin-right: auto;
-    }
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .animal-spotlight {
     flex-direction: column;
+    
     li{
-        width: 30%;
-        align-self: center;
+        display: flex;
+    flex-direction: column;
     }
 }
 

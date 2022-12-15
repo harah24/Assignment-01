@@ -258,7 +258,7 @@ ul {
 }
 
 header {
-  height: 100vh;
+  height: 90vh;
   padding-top: 20px;
   background-image: url(../animal-refuge/animal-land-assets/image-1.jpg);
   background-size: cover;
@@ -279,13 +279,16 @@ h1 {
   color: #FCFCFC;
   text-transform: uppercase;
   line-height: 117px;
-}
-
-.title span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 nav a {
@@ -322,12 +325,7 @@ nav a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   margin-right: 40px;
-  margin-top: 20px;
-  height: 20%;
 }
 
 h2 {
@@ -412,9 +410,11 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.flex-section4 ul {
-  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .animal-spotlight {
@@ -424,9 +424,13 @@ h3 {
           flex-direction: column;
 }
 .animal-spotlight li {
-  width: 30%;
-  -ms-flex-item-align: center;
-      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .events {
@@ -457,9 +461,14 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #C3d3CB;
 }
 .blog p {
   color: #000000;
+}
+.blog button {
+  background-color: #152D20;
+  color: #FCFCFC;
 }
 
 .box {
@@ -563,7 +572,7 @@ footer {
 }
 
 /* to remove the hamburger menu from tablet and desktop views */
-@media (max-width: 1400px) {
+@media (min-width: 481px) {
   label[for=toggle] {
     display: none;
   }
@@ -571,21 +580,106 @@ footer {
     display: none;
   }
 }
-@media (max-width: 480px) {
-  body {
+@media (max-width: 988px) {
+  .socials {
+    margin-top: auto;
+  }
+  .box-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .box-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .box-3 {
+    width: 80%;
+  }
+  .box-3 button {
+    padding: 10px;
+    line-height: 15px;
+    margin: 0 30%;
     font-size: 1.6rem;
   }
+  .box-6 {
+    width: 80%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .box-6 button {
+    padding: 10px;
+    line-height: 15px;
+    margin: 0 30%;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 1.8rem;
+  }
   header {
-    height: 75vh;
+    height: 35vh;
+  }
+  nav .bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
+  ul.sliding-menu {
+    background-color: darkgreen;
+    position: fixed;
+    z-index: 10;
+    width: 30%;
+    right: -30%;
+    top: 0;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  ul.sliding-menu a {
+    border-bottom: 1px solid pink;
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  ul.sliding-menu a:hover,
+ul.sliding-menu a:focus {
+    background: skyblue;
+  }
+  input[type=checkbox]:checked + ul.sliding-menu {
+    right: 0;
   }
   h1 {
     font-size: 6rem;
+    line-height: 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   h2 {
     font-size: 4rem;
   }
   h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     width: 100%;
     margin-left: auto;
   }
@@ -593,10 +687,8 @@ footer {
     font-size: 2.5rem;
     text-align: center;
   }
-  .title {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    text-align: left;
+  .section-4 li {
+    font-size: 3rem;
   }
   .socials {
     display: none;
@@ -644,14 +736,11 @@ footer {
             flex-direction: column;
   }
   .flex-section4 ul {
-    margin-bottom: 15%;
-    margin-left: 10%;
-  }
-  .flex-section4 .events {
-    margin-left: 35%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 10%;
   }
   .flex-section4 .merch {
-    margin-left: 35%;
     margin-bottom: 0;
   }
   .box-1 {

@@ -1,20 +1,53 @@
 @use 'variables' as *;
 
 /* to remove the hamburger menu from tablet and desktop views */
-@media (max-width:1400px){
+@media (min-width:481px){
     label[for="toggle"] {
     display: none;
     }
-
     input[type="checkbox"]{
     display: none;
     }
 }
 
-// ipad view
+// small screen/ipad view
 
-@media (max-width:810px){
+@media (max-width:988px){
 
+    .socials{
+    margin-top: auto;
+    }
+
+    .box-1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .box-2{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 80%;
+        button{
+            padding:10px;
+            line-height: 15px;
+            margin: 0 30%;
+            font-size: 1.6rem;
+        }
+    }
+    .box-6{
+        width: 80%;
+        align-self: center;
+        button{
+            padding:10px;
+            line-height: 15px;
+            margin: 0 30%;
+            font-size: 1.6rem;
+        }
+    }
 }
 
 // mobile view 
@@ -22,19 +55,60 @@
 @media (max-width:480px){
 
     body{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
+
     header{
-        height: 75vh;      
+        height: 35vh;      
     }
+    nav .bars{
+       display: flex;
+       justify-content: flex-end;
+       align-content: flex-end;
+
+    }
+    ul.sliding-menu{
+        background-color: darkgreen;
+        position: fixed;
+        z-index: 10;
+        width: 30%;
+        right: -30%;
+        top: 0;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    ul.sliding-menu a{
+        border-bottom: 1px solid pink;
+        display: inline-block;
+        font-size:1.8rem;
+        width: 100%;
+        padding: 20px;
+        transition: all 0.3s;
+    }
+    ul.sliding-menu a:hover,
+    ul.sliding-menu a:focus{
+        background:skyblue;
+    }
+
+    input[type="checkbox"]:checked + ul.sliding-menu{
+        right: 0;
+    }
+
+
+
+
     h1 {
         font-size: 6rem;
+        line-height: 50px;
+        align-items: flex-start;
     }
+
     h2{
         font-size: 4rem;
     }
+
     h3{
-        font-size: 4rem;
+        font-size: 3.5rem;
         width: 100%;
         margin-left: auto;
     }
@@ -42,13 +116,15 @@
         font-size:2.5rem;
         text-align: center;
     }
-    .title{
-        align-self: flex-start;
-        text-align: left;
+
+    .section-4 li{
+        font-size: 3rem;
     }
+
     .socials{
         display: none;
     }
+
     .about-suzie{
         display: flex;
         flex-direction: column;
@@ -69,6 +145,7 @@
             margin: 0 30%;
             font-size: 1.6rem;
         }
+
     }
     .gallery ul {
         justify-content: space-between;
@@ -84,18 +161,14 @@
     .flex-section4{
         flex-direction: column;
         ul{
-            margin-bottom: 15%;
-            margin-left: 10%;
+            align-self: center;
+            margin-bottom: 10%;
         }
-      .events {
-            margin-left: 35%;
+        .merch{
+            margin-bottom:0;
         }
-      .merch{
-        margin-left: 35%;
-        margin-bottom: 0;
-      }
-       
     }
+
     .box-1{
         flex-direction: column-reverse;
         align-items: center;
@@ -156,10 +229,5 @@
             text-align: center;
         }
     }
-
- 
-
-
-
 }
 
