@@ -1,13 +1,135 @@
 @use 'variables' as *;
 
-// to remove hamburger menu from desktop view
+/* to remove the hamburger menu from tablet and desktop views */
+@media (max-width:1400px){
+    label[for="toggle"] {
+    display: none;
+    }
 
-@media (max-width:1200px){
+    input[type="checkbox"]{
+    display: none;
+    }
+}
+
+// ipad view
+
+@media (max-width:810px){
 
 }
 
 // mobile view 
 
-@media (max-width: 500px){
+@media (max-width:480px){
+
+
+
+    // ul.sliding-menu{
+    //     background:#152D20;
+    //     position: fixed;
+    //     z-index: 10;
+    //     width: 30%;
+    //     right: -30%;
+    //     top: 0;
+    //     height: 50%;
+    //     transition: all 0.5s;
+    //     flex-direction: column;
+    // }
+    
+    // ul.sliding-menu a{
+    //     border-bottom: 1px solid #C3D3CB;
+    //     display: inline-block;
+    //     font-size: 15px;
+    //     width: 80%;
+    //     padding: 20px;
+    //     transition: all 0.3s;
+    // }
+    
+    // ul.sliding-menu a:hover,
+    // ul.sliding-menu a:focus{
+    //     background: lightblue;
+    // }
+    
+    // input[type="checkbox"]:checked + ul.sliding-menu{
+    //     right: 0;
+    // }
+    
+    // input[type="checkbox"]{
+    //     display: none;
+    // }
+    
+    // label[for="toggle"] {
+    //     position: fixed;
+    //     top: 10px;
+    //     right:10px;
+    //     color:black;
+    //     z-index: 10;
+    // }
+
+    
+    body{
+        font-size: 1.8rem;
+    }
+
+    header{
+        height: 55vh;      
+    }
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 4rem;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .title{
+        align-self: flex-start;
+        text-align: left;
+    }
+    .socials{
+        display: none;
+    }
+
+    .about-suzie{
+        display: flex;
+        flex-direction: column;
+        margin-top: -70px;
+        margin-bottom: -40px;
+
+        .image-container{
+            width: 100%;
+        }
+
+        .text-container{
+            width:100%;
+        }
+
+        button{
+            padding:10px;
+            line-height: 15px;
+            margin: 0 30%;
+            font-size: 1.6rem;
+        }
+
+    }
+    .gallery ul {
+        justify-content: space-between;
+        margin-bottom: -50px;
+        li{
+            flex-basis: 48%;
+        }
+        .image-3{
+            display: none;
+        }
+    }
+
+
+
+
 
 }
+

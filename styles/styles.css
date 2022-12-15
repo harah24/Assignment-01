@@ -226,6 +226,37 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   height: 100vh;
   padding-top: 20px;
@@ -250,14 +281,11 @@ h1 {
   line-height: 117px;
 }
 
-.title {
+.title span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  text-align: right;
 }
 
 nav a {
@@ -315,7 +343,7 @@ h2 {
   padding: 100px 0;
 }
 
-.suzies-story .wrapper {
+.about-suzie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,12 +390,12 @@ h3 {
   text-align: center;
 }
 
-.gallery ul {
+.gallery ul .image-5 .image-4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.gallery ul li {
+.gallery ul .image-5 .image-4 li {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
 }
@@ -533,33 +561,75 @@ footer {
   color: #FCFCFC;
 }
 
-html {
-  font-size: 62.5%;
+/* to remove the hamburger menu from tablet and desktop views */
+@media (max-width: 1400px) {
+  label[for=toggle] {
+    display: none;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  color: #000000;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #FCFCFC;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 480px) {
+  body {
+    font-size: 1.8rem;
+  }
+  header {
+    height: 55vh;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 4rem;
+    width: 100%;
+    margin-left: auto;
+  }
+  .title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: left;
+  }
+  .socials {
+    display: none;
+  }
+  .about-suzie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -70px;
+    margin-bottom: -40px;
+  }
+  .about-suzie .image-container {
+    width: 100%;
+  }
+  .about-suzie .text-container {
+    width: 100%;
+  }
+  .about-suzie button {
+    padding: 10px;
+    line-height: 15px;
+    margin: 0 30%;
+    font-size: 1.6rem;
+  }
+  .gallery ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -50px;
+  }
+  .gallery ul li {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .gallery ul .image-3 {
+    display: none;
+  }
 }
