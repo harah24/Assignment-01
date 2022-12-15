@@ -648,7 +648,7 @@ footer {
     width: 30%;
     left: -30%;
     top: 0;
-    height: 30%;
+    height: 100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
