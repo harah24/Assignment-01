@@ -11,11 +11,13 @@
 
 .flex-section4{
     display: flex;
+    ul {
+        margin-right: auto;
+    }
 }
 
 .animal-spotlight {
     flex-direction: column;
-    
     li{
         width: 30%;
         align-self: center;
@@ -24,15 +26,13 @@
 
 .events {
     flex-direction: column;
-    padding-right: 250px;
-    padding-left: 200px;
 }
 
 .merch {
     flex-direction: column;
 }
 
-i{
+i {
     margin-bottom: 45px;
     align-self: center;
 }

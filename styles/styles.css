@@ -390,12 +390,12 @@ h3 {
   text-align: center;
 }
 
-.gallery ul .image-5 .image-4 {
+.gallery ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.gallery ul .image-5 .image-4 li {
+.gallery ul li {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
 }
@@ -412,6 +412,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.flex-section4 ul {
+  margin-right: auto;
 }
 
 .animal-spotlight {
@@ -431,8 +434,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 250px;
-  padding-left: 200px;
 }
 
 .merch {
@@ -572,10 +573,10 @@ footer {
 }
 @media (max-width: 480px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   header {
-    height: 55vh;
+    height: 75vh;
   }
   h1 {
     font-size: 6rem;
@@ -587,6 +588,10 @@ footer {
     font-size: 4rem;
     width: 100%;
     margin-left: auto;
+  }
+  h4 {
+    font-size: 2.5rem;
+    text-align: center;
   }
   .title {
     -ms-flex-item-align: start;
@@ -631,5 +636,105 @@ footer {
   }
   .gallery ul .image-3 {
     display: none;
+  }
+  .flex-section4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-section4 ul {
+    margin-bottom: 15%;
+    margin-left: 10%;
+  }
+  .flex-section4 .events {
+    margin-left: 35%;
+  }
+  .flex-section4 .merch {
+    margin-left: 35%;
+    margin-bottom: 0;
+  }
+  .box-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .box-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .box-3 {
+    width: 80%;
+  }
+  .box-3 button {
+    padding: 10px;
+    line-height: 15px;
+    margin: 0 30%;
+    font-size: 1.6rem;
+  }
+  .box-6 {
+    width: 80%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .box-6 button {
+    padding: 10px;
+    line-height: 15px;
+    margin: 0 30%;
+    font-size: 1.6rem;
+  }
+  .section6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section6 .lower-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section6 h5 {
+    text-align: center;
+  }
+  .section6 .update {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section6 p {
+    margin-bottom: 10%;
+  }
+  .section6 form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section6 form button {
+    margin-top: 10%;
+  }
+  .section6 .contact {
+    margin-bottom: 0;
+  }
+  .section6 .information li {
+    text-align: center;
   }
 }
